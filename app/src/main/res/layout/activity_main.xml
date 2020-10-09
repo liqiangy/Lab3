@@ -12,35 +12,35 @@
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/enteremail" />
 
     <EditText
         android:id="@+id/et1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textEmailAddress"
+        android:text="@string/enteremail" />
 
     <TextView
         android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/enterpw" />
 
     <EditText
         android:id="@+id/et2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPassword"
+        android:text="@string/youname" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="@string/login" />
 
 
 </LinearLayout>

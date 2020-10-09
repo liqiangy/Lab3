@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 onPause();
                 Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
                 goToProfile.putExtra("EMAIL",et1.getText().toString());
-                finish();
+                startActivity(goToProfile);
             }
         });
 

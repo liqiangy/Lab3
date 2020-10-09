@@ -12,13 +12,13 @@
         android:id="@+id/tv4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/yourfile" />
 
     <TextView
         android:id="@+id/tv5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/youname" />
 
     <EditText
         android:id="@+id/et4"
@@ -26,13 +26,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="@string/youname" />
 
     <TextView
         android:id="@+id/tv6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/enteremail" />
 
     <EditText
         android:id="@+id/et5"
@@ -40,11 +40,20 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
-
+        android:text="@string/enteremail" />
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourpic" />
     <ImageButton
         android:id="@+id/imagebtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/picture_frame" />
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click" />
 </LinearLayout>

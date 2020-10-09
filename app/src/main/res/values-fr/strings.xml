@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="enteremail">Entrer votref Email</string>
+    <string name="enterpw">Entrer votre Password</string>
+    <string name="login">Identifier</string>
+    <string name="yourfile">Votre Pfofil</string>
+    <string name="youname">Votre Nom</string>
+    <string name="yourpic">Votre image</string>
+    <string name="click">cliquez sur le bouton ci-dessus pour prendre une photo</string>
+</resources>
