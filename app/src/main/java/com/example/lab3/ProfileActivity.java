@@ -19,6 +19,7 @@ import android.widget.ImageButton;
 public class ProfileActivity extends AppCompatActivity {
     ImageButton mImageButton;
     EditText et4,et5;
+    Button btn;
     static final int REQUEST_IMAGE_CAPTURE = 1;
     public static final String ACTIVITY_NAME = "PROFILE_ACTIVITY";
     @Override
@@ -32,6 +33,7 @@ public class ProfileActivity extends AppCompatActivity {
         Intent fromMain = getIntent();
         String emailFromMain=fromMain.getStringExtra("EMAIL");
         et5.setText(emailFromMain);
+        btn=findViewById(R.id.btn);
 
         mImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,13 @@ public class ProfileActivity extends AppCompatActivity {
                     startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
                 }
             };
+        });
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoChat = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(gotoChat);
+            }
         });
     }
     @Override

@@ -8,4 +8,8 @@
     <string name="youname">Votre Nom</string>
     <string name="yourpic">Votre image</string>
     <string name="click">cliquez sur le bouton ci-dessus pour prendre une photo</string>
+    <string name="goback">aller a dialoge</string>
+    <string name="btnsend">Envoyer</string>
+    <string name="btnreceive">Recevoir</string>
+    <string name="message">Ecrire ici</string>
 </resources>
