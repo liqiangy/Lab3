@@ -158,4 +158,8 @@ public class ChatRoomActivity extends AppCompatActivity {
             return view;
         }
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
