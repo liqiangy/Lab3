@@ -44,17 +44,18 @@ public class ChatRoomActivity extends AppCompatActivity {
         initMsg();
         listView.setAdapter(myAdapter = new MyListAdapter());
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("A title").setMessage("My message");
+        alertDialogBuilder.setTitle("Do you want to delete this?");
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                             @Override
                                             public void onItemClick(AdapterView<?> adapter, View view, final int position, long arg) {
-                                                alertDialogBuilder.setPositiveButton("positive", new DialogInterface.OnClickListener() {
+                                                alertDialogBuilder.setMessage("The database id:"+myAdapter.getItemId(position)+"\nThe selected row is: "+position);
+                                                alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                                     @Override
                                                     public void onClick(DialogInterface click, int e) {
                                                         elements.remove(position);
                                                         myAdapter.notifyDataSetChanged();
                                                     }
-                                                }).setNegativeButton("negative", new DialogInterface.OnClickListener() {
+                                                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
                                                     @Override
                                                     public void onClick(DialogInterface click, int arg) {
                                                     }
@@ -70,12 +71,14 @@ public class ChatRoomActivity extends AppCompatActivity {
             Msg msg=new Msg(message,0);
             elements.add(msg);
             myAdapter.notifyDataSetChanged();
+            etmessage.setText("");
         });
         btnreceive.setOnClickListener((v) -> {
             String message = etmessage.getText().toString();
             Msg msg=new Msg(message,1);
             elements.add(msg);
             myAdapter.notifyDataSetChanged();
+            etmessage.setText("");
         });
 
     }
