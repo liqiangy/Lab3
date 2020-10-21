@@ -12,4 +12,9 @@
     <string name="btnsend">Envoyer</string>
     <string name="btnreceive">Recevoir</string>
     <string name="message">Ecrire ici</string>
+    <string name="selectitem">La ligne sélectionnée est: </string>
+    <string name="dbid">L\'ID de la base de données: </string>
+    <string name="ask">Voulez-vous le supprimer?</string>
+    <string name="yes">oui</string>
+    <string name="no">non</string>
 </resources>

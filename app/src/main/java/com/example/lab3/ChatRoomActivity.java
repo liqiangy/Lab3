@@ -44,18 +44,18 @@ public class ChatRoomActivity extends AppCompatActivity {
         initMsg();
         listView.setAdapter(myAdapter = new MyListAdapter());
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("Do you want to delete this?");
+        alertDialogBuilder.setTitle(R.string.ask);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                             @Override
                                             public void onItemClick(AdapterView<?> adapter, View view, final int position, long arg) {
-                                                alertDialogBuilder.setMessage("The database id:"+myAdapter.getItemId(position)+"\nThe selected row is: "+position);
-                                                alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                                alertDialogBuilder.setMessage(""+R.string.dbid +""+ myAdapter.getItemId(position) +"\n"+R.string.selectitem + position);
+                                                alertDialogBuilder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                                     @Override
                                                     public void onClick(DialogInterface click, int e) {
                                                         elements.remove(position);
                                                         myAdapter.notifyDataSetChanged();
                                                     }
-                                                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                                }).setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                                     @Override
                                                     public void onClick(DialogInterface click, int arg) {
                                                     }
