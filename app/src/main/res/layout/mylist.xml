@@ -16,7 +16,7 @@
             android:id="@+id/imgsend"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/row_send">
+            android:background="@drawable/row_receive">
         </ImageView>
 <TextView
     android:id="@+id/left_msg"
@@ -44,7 +44,7 @@
             android:id="@+id/imgreceive"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/row_receive">
+            android:background="@drawable/row_send">
         </ImageView>
     </LinearLayout>
 </LinearLayout>
